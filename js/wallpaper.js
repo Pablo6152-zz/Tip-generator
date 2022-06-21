@@ -6,7 +6,7 @@ function acquireWallpaper(){
         .then(data => {
             document.body.style.backgroundImage = `url(${data.urls.full})`
             const e = document.getElementById("head")
-            e.children[0].remove()
+            e.children[9].remove()
             e.innerHTML += `<meta name="theme-color" content="${data.color}" />`
         })
 
