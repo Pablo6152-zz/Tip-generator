@@ -1,11 +1,16 @@
 import * as counter from './counter.js'
+import acquireWallpaper from './wallpaper.js'
 
 const totalAmountEl = document.getElementById("total-amount-el")
 const tipPercentageEl = document.getElementById("tip-percentage-el")
 const splitPersons = document.getElementById("split-persons")
 const appContainer = document.getElementById("site-bg")
+const clearBtn = document.getElementById("clear-btn")
 let finalTip = 0
 let eachPersonAmount = 0
+
+
+clearBtn.addEventListener("click", acquireWallpaper)
 
 document.getElementById("calculate-btn").addEventListener("click", () =>{
     finalTip = totalAmountEl.value * (tipPercentageEl.value / 100)
@@ -34,3 +39,5 @@ document.getElementById("calculate-btn").addEventListener("click", () =>{
         </div>
         `
 })
+
+export default appContainer
