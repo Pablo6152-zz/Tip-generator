@@ -31,8 +31,9 @@ h2{
     text-align: center;
 }
 .result-text{
-    margin-top: 1em;
+    margin: 1em 0;
     text-align: center;
+    font-size: 1.4em;
 }
 .operation-complete{
     text-align: center;
@@ -144,7 +145,7 @@ h2{
 }
 .after{
     display: grid;
-    grid: 1fr 1fr / 30px 1fr 30px;
+    grid: 20% 80% / 30px 1fr 30px;
 
     grid-template-areas: 
     "g o o s"
