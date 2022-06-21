@@ -41,7 +41,6 @@ document.getElementById("calculate-btn").addEventListener("click", () =>{
     document.getElementById("go-back").addEventListener("click", function (){
         document.getElementById("main-component-calculate").classList.remove("inactive")
         document.getElementById("main-component-result").classList.add("inactive")
-        console.log("Clicked")
     })
 })
 
