@@ -23,6 +23,9 @@ html{
     -o-background-size: cover;
     background-size: cover;
 }
+h2{
+    text-align: center;
+}
 .site-bg{
     height: 100%;
     /* background: rgb(238,174,202);
@@ -50,14 +53,26 @@ html{
     box-shadow: rgba(0, 0, 0, 0.747) 8px 20px 40px 8px
 }
 
+@media (min-width: 500px){
+    .main-component{
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 900px){
+    .main-component{
+        max-width: 30%;
+    }
+}
+
 .input{
     outline: none;
     border: none;
     border-radius: 8px;
 
-
+    margin-bottom: 1em;
     background-color: rgba(0, 0, 0, 0.336);
-    padding: 0.6em .1em;
+    padding: 0.6em .1em;    
     text-align: center;
     color: #fff;
 }
@@ -65,6 +80,16 @@ html{
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+.counter-btn{
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    border: 1px #fff solid;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: #fff;
 }
 .btn{
     margin-top: 1em;
