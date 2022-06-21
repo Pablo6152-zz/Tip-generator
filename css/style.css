@@ -49,10 +49,8 @@ h2{
     align-items: center;
 }
 
-/* .test{
-    background-color: #1f313b;
-} */
-#main-component{
+.before,
+.after{
     width: 90%;
     background-color: rgba(0, 0, 0, 0.582);
     color: white;
@@ -140,6 +138,7 @@ h2{
 
 
 /* After */
+
 .before{
     display: flex;
     flex-direction: column;
@@ -165,4 +164,7 @@ h2{
 }
 .result-text{
     grid-area: r;
+}
+.inactive{
+    display: none;
 }

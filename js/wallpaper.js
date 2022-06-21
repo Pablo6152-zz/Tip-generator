@@ -1,6 +1,3 @@
-import appContainer from './index.js'
-
-let imgData = ""
 
 function acquireWallpaper(){
     appContainer.classList.add("test")
