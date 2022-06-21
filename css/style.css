@@ -47,7 +47,7 @@ html{
     border: 1px #fff solid;
     padding: 1em;
 
-    box-shadow: rgba(0, 0, 0, 0.616) 8px 20px 40px 8px
+    box-shadow: rgba(0, 0, 0, 0.747) 8px 20px 40px 8px
 }
 
 .input{
@@ -59,4 +59,25 @@ html{
     background-color: rgba(0, 0, 0, 0.336);
     padding: 0.6em .1em;
     text-align: center;
+    color: #fff;
+}
+.button-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn{
+    margin-top: 1em;
+    padding: .9em 1.5em;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    
+}
+#clear-btn{
+    background-color: rgba(0, 81, 255, 0.336);
+}
+#calculate-btn{
+    background-color: rgb(4, 110, 0);
 }
