@@ -1,4 +1,3 @@
-const e = document.querySelector("li:first-child")
 
 function acquireWallpaper(){
     
@@ -6,10 +5,12 @@ function acquireWallpaper(){
         .then(res => res.json())
         .then(data => {
             document.body.style.backgroundImage = `url(${data.urls.full})`
-            e.parentElement.removeChild(e)
-            document.getElementsByTagName("head").innerHTML += `<meta name="theme-color" content="${data.color}" />`
+            const e = document.getElementById("head")
+            e.children[0].remove()
+            e.innerHTML += `<meta name="theme-color" content="${data.color}" />`
         })
 
 }
+
 
 export default acquireWallpaper
