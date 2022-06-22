@@ -11,6 +11,8 @@ function acquireWallpaper(){
             document.getElementById("atr-name").textContent = `${data.user.name}`
             authorDetails = data    
         })
+
+    document.getElementById("author-details-el").style.display = "flex"
 }
 
 
