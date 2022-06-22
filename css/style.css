@@ -52,13 +52,13 @@ h2{
 .before,
 .after{
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.801);
     color: white;
     border-radius: 36px;
     border: 1px #fff solid;
     padding: 1em;
 
-    box-shadow: rgba(0, 0, 0, 0.747) 8px 20px 40px 8px
+    box-shadow: rgba(0, 0, 0, 0.61) 8px 20px 40px 8px
 }
 
 @media (min-width: 500px){
@@ -81,10 +81,14 @@ h2{
     border-radius: 8px;
 
     margin-bottom: 1em;
-    background-color: rgba(0, 0, 0, 0.336);
-    padding: 0.9em 1.4em;    
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px #fff solid;
+    padding: 0.9em 1.4em;
     text-align: center;
+    
     color: #fff;
+    
+
 }
 .button-section{
     display: flex;
