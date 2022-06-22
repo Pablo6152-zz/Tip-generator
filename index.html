@@ -4,18 +4,19 @@
     <meta name="theme-color" content="#1f313b" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Tip generator</title>
 
     
 </head>
 <body>
 
-    <div id="site-bg">
+    <div id="site-bg" style="display: none;">
         <div id="main-component-calculate" class="before">
             <h2>Total amount</h2>
             <input type="number" name="" id="total-amount-el" class="input">
@@ -44,8 +45,23 @@
         </div>
 
         <div class="visual-amount"></div>
+        <button class="atribution-sect">
+            <i class="material-icons" id="material-icons">photo_camera</i>
+            <p class="atr-name">Pablo Cisneros</p>
+        </button>   
     </div>
-
+    
+    <div id="modal-el">
+        <!-- Image
+        Name
+        Socials
+        Location - left, Download right -->
+        
+    </div>
+    <div class="bts-sect">
+        <button id="get-data">Get data</button>
+        <button id="test-btn">Test!</button>
+    </div>
     <script src="/js/index.js" type="module"></script>
 </body>
 </html>

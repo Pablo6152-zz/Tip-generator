@@ -19,4 +19,4 @@ function noNegativeValues(){
     }
 }
 
-export default splitAccount
+export {splitAccount}

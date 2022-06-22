@@ -1,7 +1,7 @@
-import acquireWallpaper from './wallpaper.js'
-import splitAccount from './utils.js'
+import {acquireWallpaper, authorDetails} from './wallpaper.js'
+import {getData} from './author.js'
 
-
+const authorSect = document.getElementById("modal-el")
 const totalAmountEl = document.getElementById("total-amount-el")
 const tipPercentageEl = document.getElementById("tip-percentage-el")
 const splitPersons = document.getElementById("split-persons")
@@ -34,10 +34,6 @@ document.getElementById("calculate-btn").addEventListener("click", () =>{
                 results in <span class="accent-text">${finalTip}$</span>,
                 ${splitPersons.value} friends so ${eachPersonAmount}$ per person ${emojiCollection[Math.floor((Math.random() * 6) + 0)]}.
                 </p>
-                
-
-                
-            
         `
 
     document.getElementById("go-back").addEventListener("click", function (){
@@ -46,4 +42,6 @@ document.getElementById("calculate-btn").addEventListener("click", () =>{
     })
 })
 
-export default mainContainerResult
+
+
+export {mainContainerResult, authorSect}
