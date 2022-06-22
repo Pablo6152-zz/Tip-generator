@@ -1,7 +1,11 @@
 import {acquireWallpaper, authorDetails} from './wallpaper.js'
-import {getData} from './author.js'
+import {serveAuthorInfo} from './author.js'
 
 const authorSect = document.getElementById("modal-el")
+const authorDetailsEl = document.getElementById("author-details-el")
+const goBack2 = document.getElementById("go-back-2")
+
+
 const totalAmountEl = document.getElementById("total-amount-el")
 const tipPercentageEl = document.getElementById("tip-percentage-el")
 const splitPersons = document.getElementById("split-persons")
@@ -12,6 +16,13 @@ let eachPersonAmount = 0
 const emojiCollection = ["😄", "🧐", "😬", "🤑", "🤠", "🙂", "😃"]
 
 clearBtn.addEventListener("click", acquireWallpaper)
+
+
+authorDetailsEl.addEventListener("click", () => {
+    document.getElementById("site-bg").style.display = "none"
+    authorSect.style.display = "grid"
+    serveAuthorInfo()
+})
 
 document.getElementById("calculate-btn").addEventListener("click", () =>{
     finalTip = totalAmountEl.value * (tipPercentageEl.value / 100)
@@ -36,7 +47,7 @@ document.getElementById("calculate-btn").addEventListener("click", () =>{
                 </p>
         `
 
-    document.getElementById("go-back").addEventListener("click", function (){
+    document.getElementById("go-back").addEventListener("click", () => {
         document.getElementById("main-component-calculate").classList.remove("inactive")
         document.getElementById("main-component-result").classList.add("inactive")
     })
@@ -44,4 +55,4 @@ document.getElementById("calculate-btn").addEventListener("click", () =>{
 
 
 
-export {mainContainerResult, authorSect}
+export {mainContainerResult, authorSect, goBack2}

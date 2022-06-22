@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <div id="site-bg" style="display: none;">
+    <div id="site-bg">
         <div id="main-component-calculate" class="before">
             <h2>Total amount</h2>
             <input type="number" name="" id="total-amount-el" class="input">
@@ -42,26 +42,27 @@
             <h2 class="operation-complete">Completed!</h2>
 
             <button id="share">!</button>
+            <div class="visual-amount"></div>
         </div>
 
-        <div class="visual-amount"></div>
-        <button class="atribution-sect">
+        
+        <button class="atribution-sect" id="author-details-el">
             <i class="material-icons" id="material-icons">photo_camera</i>
-            <p class="atr-name">Pablo Cisneros</p>
+            <p id="atr-name">Pablo Cisneros</p>
         </button>   
     </div>
     
-    <div id="modal-el">
+    <div id="modal-el" class="hide">
         <!-- Image
         Name
         Socials
         Location - left, Download right -->
         
     </div>
-    <div class="bts-sect">
+    <!-- <div class="bts-sect">
         <button id="get-data">Get data</button>
         <button id="test-btn">Test!</button>
-    </div>
+    </div> -->
     <script src="/js/index.js" type="module"></script>
 </body>
 </html>

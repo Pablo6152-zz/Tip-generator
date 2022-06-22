@@ -8,6 +8,7 @@ function acquireWallpaper(){
         .then(data => {
             document.body.style.backgroundImage = `url(${data.urls.full})`
             head.children[0].content = data.color
+            document.getElementById("atr-name").textContent = `${data.user.name}`
             authorDetails = data    
         })
 }
