@@ -18,3 +18,5 @@ function noNegativeValues(){
         splitPersons.value = 0
     }
 }
+
+export default splitAccount

@@ -62,13 +62,15 @@ h2{
 }
 
 @media (min-width: 500px){
-    #main-component{
+    .before,
+    .after{
         max-width: 40%;
     }
 }
 
 @media (min-width: 900px){
-    #main-component{
+    .before,
+    .after{
         max-width: 30%;
     }
 }
@@ -167,4 +169,7 @@ h2{
 }
 .inactive{
     display: none;
+}
+.visual-amount{
+    width: 100%;
 }
