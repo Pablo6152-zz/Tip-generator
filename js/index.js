@@ -1,5 +1,7 @@
 import {acquireWallpaper, authorDetails} from './wallpaper.js'
 import {serveAuthorInfo} from './author.js'
+/* Counter function from utils */
+import {splitAccount} from './utils.js'
 
 const authorSect = document.getElementById("modal-el")
 const authorDetailsEl = document.getElementById("author-details-el")
@@ -16,7 +18,6 @@ let eachPersonAmount = 0
 const emojiCollection = ["😄", "🧐", "😬", "🤑", "🤠", "🙂", "😃"]
 
 clearBtn.addEventListener("click", acquireWallpaper)
-
 
 authorDetailsEl.addEventListener("click", () => {
     document.getElementById("site-bg").style.display = "none"
